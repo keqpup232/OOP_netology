@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>OOP_netology.py</StartupFile>
+    <StartupFile>z7.1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="z7.1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="OOP_netology.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="recipes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
