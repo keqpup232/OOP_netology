@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>z7.1.py</StartupFile>
+    <StartupFile>z7.3\z7.3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,9 +25,19 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="OOP_netology.py" />
+    <Compile Include="z7.3\z7.3.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="recipes.txt" />
+    <Content Include="z7.3\1.txt" />
+    <Content Include="z7.3\2.txt" />
+    <Content Include="z7.3\3.txt" />
+    <Content Include="z7.3\result.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="z7.3\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
