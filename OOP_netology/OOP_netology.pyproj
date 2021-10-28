@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>z7.3\z7.3.py</StartupFile>
+    <StartupFile>z8\z8.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,9 @@
     <Compile Include="z7.3\z7.3.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="z8\z8.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="recipes.txt" />
@@ -35,8 +38,12 @@
     <Content Include="z7.3\2.txt" />
     <Content Include="z7.3\3.txt" />
     <Content Include="z7.3\result.txt" />
+    <Content Include="z8\newsafr.json" />
+    <Content Include="z8\newsafr.xml" />
+    <Content Include="z8\result_file.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="z8\" />
     <Folder Include="z7.3\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
