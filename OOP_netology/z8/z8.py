@@ -30,9 +30,11 @@ def get_result_file_xml(file,file_result):
 	parser = ET.XMLParser(encoding="utf-8")
 	tree = ET.parse(file,parser)
 	root = tree.getroot()
-	print(root.tag)
-
-
+	xml_items = root.findall("channel/item")
+	for xmli in xml_items:
+		file_text = open(file_result, 'a')
+		file_text.write(xmli.find("description").text+' ')
+		file_text.close()
 
 def long_words(filename):
     with open(filename) as f:
