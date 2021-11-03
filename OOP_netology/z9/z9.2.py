@@ -1,21 +1,32 @@
 import requests
-from pprint import pprint
+import os
 
-Super_Heros_Intelligence={'Hulk':0,'Captain%America':0,'Thanos':0}
 TOKEN = None
-with open("z9/token_superhero.txt") as f:
+with open("z9/token_yandex.txt") as f:
     TOKEN = f.read().strip()
+HEADERS = {"Authorization":TOKEN}
 
-url = "https://superheroapi.com/api/"+TOKEN
+class YaUploader:
+    def __init__(self, token: str):
+        self.token = token
 
-for heros in Super_Heros_Intelligence.keys():
-    resp = requests.get(url+"/search/"+str(heros))
-    resp.raise_for_status()
-    intelligence=resp.json()["results"][0]["powerstats"]["intelligence"]
-    Super_Heros_Intelligence[heros]=int(intelligence)
+    def upload(self, file_path: str):
+        resp_first = requests.get(
+            "https://cloud-api.yandex.net/v1/disk/resources/upload",
+            params={"path":os.path.basename(file_path),"overwrite":"true"},
+            headers=HEADERS
+            )
+        resp_first.raise_for_status()
+        href=resp_first.json()["href"]
 
-print(Super_Heros_Intelligence)
-print(max(Super_Heros_Intelligence, key=Super_Heros_Intelligence.get))
+        with open(os.path.abspath(file_path), 'rb') as f:
+            resp_second = requests.put(href,f)
+            resp_second.raise_for_status()
+        return print('Загрузка Успешна')
+
+if __name__ == '__main__':
+    uploader = YaUploader(TOKEN)
+    result = uploader.upload('D:\Paint Tool SAI 1.2.5\elemap\Arrow.bmp')
 
 
 

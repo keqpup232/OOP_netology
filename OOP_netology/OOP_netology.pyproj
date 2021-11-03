@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>z9\z9.1.py</StartupFile>
+    <StartupFile>z9\z9.2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
