@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/OOP_netology/z9/token_yandex.txt
+/OOP_netology/z9/token_superhero.txt

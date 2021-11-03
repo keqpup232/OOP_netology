@@ -10,18 +10,13 @@ def get_result_file_json(file,file_result):
 	f.close()
 	with open (file, encoding="utf-8") as f:
 		data = json.load(f)
-		for key,rss in data.items():
-			if key=='rss':
-				for key,channel in rss.items():
-					if key=='channel':
-						for key,items in channel.items():
-							if key=='items':
-								for elements in items:
-									for key,result in elements.items():
-										if key=='description':
-											file_text = open(file_result, 'a')
-											file_text.write(result+' ')
-											file_text.close()
+		items=data['rss']['channel']['items']
+		for item in items:
+			for key,result in item.items():
+				if key=='description':
+					file_text = open(file_result, 'a')
+					file_text.write(result+' ')
+					file_text.close()
 
 def get_result_file_xml(file,file_result):
 	f = open(file_result, 'w')
