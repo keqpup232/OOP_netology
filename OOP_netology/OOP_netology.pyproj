@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>z9\z9.2.py</StartupFile>
+    <StartupFile>z9\z9.3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,9 @@
     <Compile Include="z9\z9.1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="z9\z9.3.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="recipes.txt" />
@@ -48,6 +51,7 @@
     <Content Include="z8\newsafr.json" />
     <Content Include="z8\newsafr.xml" />
     <Content Include="z8\result_file.txt" />
+    <Content Include="z9\token_stackoverflow.txt" />
     <Content Include="z9\token_yandex.txt" />
     <Content Include="z9\token_superhero.txt" />
   </ItemGroup>
