@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>883651ed-8707-421a-b922-6d96ec525f1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>z9\z9.3.py</StartupFile>
+    <StartupFile>z10\z10.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="z10\z10.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="z7.1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -56,6 +59,7 @@
     <Content Include="z9\token_superhero.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="z10\" />
     <Folder Include="z9\" />
     <Folder Include="z8\" />
     <Folder Include="z7.3\" />
